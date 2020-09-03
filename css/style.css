@@ -190,14 +190,15 @@ html {
 }
 /*footer*/
 .footer{
-height: 4rem;
-  background: #DE6262;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background: #DE6262; 
+  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  
+  background: linear-gradient(to right, #FFB88C, #DE6262); 
   width: 100%;
   text-align: center;
   font-family: "Poppins";
-  font-size: 1.4rem;
+  font-size: 1.0rem;
+  
 }
 
 /*Mobile Responsive*/
