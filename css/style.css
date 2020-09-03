@@ -21,17 +21,13 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #117bfb);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #ff1226);
 }
 nav {
- /* height: 80px;
-  position: fixed;
-  background-color: rgb(66, 69, 71);
-  width: 100%;*/
   background: #DE6262;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -68,6 +64,7 @@ html {
   font-family: "Jockey One";
   color: black;
   font-size: 8rem;
+  text-align: center;
 }
 .name{
   padding-top: 160px ;
@@ -93,12 +90,31 @@ html {
   margin-top: 60px;
   border-radius: 50%;
   border: 4px solid #ee7752;
+  box-shadow: 0 4px 20px 0 red;
 }
 .display{
   float:right;
   margin-right: 2rem;
   
 }
+/*Animation using Keyframe to images*/
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(1.2, 1.2);
+  }
+  100% {
+      transform: scale(1, 1);
+  }
+}
+
+.picture img:hover {
+  animation: zoominoutsinglefeatured 1s infinite;
+}
+
 .lets{
   text-align: left;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -157,29 +173,49 @@ html {
   
 }
 .contact i:hover {
-  background: none
-  cursor: pointer;
-  box-shadow: 0 0 80px #894794; 
-  
-  s
+  background:none;
 }
 .contact div p{
   
   font-weight: bolder;
   font-size: 22px;
-
 }
-
-.purple{
-  color: #9c27b0;
+.cyan{
+  color: darkcyan;
 }
 /*footer*/
 .footer{
-
-  height: 54px;
-  background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+height: 4rem;
+  background: #DE6262;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
   text-align: center;
-  font-size: 25px;
-  
+  font-family: "Poppins";
+  font-size: 1.4rem;
+}
+
+/*Mobile Responsive*/
+@media (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+  .pi{
+    font-size: 4rem;
+  }
+ #about_id{
+   padding-top: 0rem;
+
+ } 
+ .about {
+   height: auto;
+ }
+ .ss{
+   margin-top: 5rem;
+ }
+ .logo{
+   height: 6rem;
+ }
+ 
+ 
 }
