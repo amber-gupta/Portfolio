@@ -75,6 +75,11 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
+.down{
+  padding: 10px 12px;
+  margin-top: 10rem;
+  animation:down 0.5s infinite alternate;
+}
 .about {
   text-align: center;
     height: 100vh;
