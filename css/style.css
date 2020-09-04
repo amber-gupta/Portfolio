@@ -150,13 +150,10 @@ html {
   font-size: 50px;
 }
 /*For contact part*/
-
 #CONTACT{
       
   text-align: center;
   color:black;
-   
-
 }
 #CONTACT h1{
   font-size: 50px;
@@ -218,6 +215,4 @@ html {
  .logo{
    height: 6rem;
  }
- 
- 
 }
