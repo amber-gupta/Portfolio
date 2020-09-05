@@ -188,7 +188,25 @@ html {
 /*Mobile Responsive*/
 @media (max-width: 1300px) {
   nav {
-    display: none;
+    display: flex;
+  }
+  nav ul{
+    margin-bottom:1px;
+    margin-top: 1px;
+  }
+  .nav ul li{
+    display: inline-block;
+    line-height: 25px;
+    margin: 0 1px ;
+  }
+  picture img{
+    height:100px;
+    width: 100px;
+    margin-top: 40px;
+  }
+  nav ul li a{
+    font-size:10px ;
+    padding-top: 2px;
   }
   .pi{
     font-size: 4rem;
